@@ -1,0 +1,17 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    /*background: #1e2122;*/
+    font-family: 'Roboto', sans-serif;
+    background-image: url("MenuTlo.jpg");
+    background-size: 100%;
+}
+
+#headerMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: 75%;
+}
