@@ -1,4 +1,4 @@
-body, html {
+html {
     margin: 0;
     padding: 0;
     /*background: #1e2122;*/
@@ -175,13 +175,17 @@ body, html {
     cursor: pointer;
 }
 
-#loginBox, #passwordBox {
+#loginBox, #passwordBox, #repeatPasswordBox {
     color: white;
     background-color: #111213;
-    border: 2px red solid;
+    border: 2px #7138ad solid;
     border-radius: 25px;
     height: 40px;
     width: 40%;
     text-align: center;
+}
+
+#doUWantToRegister {
+    color: white;
 }
 

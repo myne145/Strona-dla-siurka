@@ -23,7 +23,7 @@ const setReviewTextBasedOnSelectedGame = () => {
         document.title = `${gameName} review - ${websiteTitle}`;
 }
 
-const setLoginOrRegisterForm = () => {
+const isInLoginMode = () => {
     let isLogin;
     const requestedFormType = new URLSearchParams(window.location.search).get('type');
     if(requestedFormType === 'login')
@@ -33,8 +33,31 @@ const setLoginOrRegisterForm = () => {
     else {
         //TODO: handle invalid values (or maybe not fuck it)
     }
-    if(isLogin) {
-        document.getElementById('loginConfirm').innerHTML = "Zaloguj Się";
+    return isLogin;
+}
+
+const setLoginOrRegisterForm = () => {
+    const isLogin = isInLoginMode();
+    if(isLogin === true) {
+        document.getElementById('loginConfirm').innerHTML = "Zaloguj się";
+        document.getElementById('doUWantToRegister').innerHTML = "Nie masz konta? Zarejestruj się!";
+        document.getElementById('loginTitle').innerHTML = "Zaloguj się";
+        document.getElementById('repeatPasswordBox').style.display = 'none';
+    }
+    if(isLogin !== true) {
+        document.getElementById('loginConfirm').innerHTML = "Zarejestruj się";
+        document.getElementById('doUWantToRegister').innerHTML = "";
+        document.getElementById('loginTitle').innerHTML = "Zarejestruj się";
+        document.getElementById('repeatPasswordBox').style.display = 'inline';
+    }
+}
+
+
+const updateLoggedInAccount = () => {
+    const isLogin = isInLoginMode();
+    //TODO password checks
+    if(isLogin === true) {
+
     }
 }
 
