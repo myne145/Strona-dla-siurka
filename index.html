@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <title>Recenzje Gier Video</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
+<!--    <script src="script.js"></script>-->
 </head>
 <body>
     <div id="headerMenu">
         <img id="headerIcon" src="icon.jpg">
         <button id="headerHome">Home</button>
-        <button id="headerGames" onclick="expandDropDownMenu()">Games</button>
+        <div class="dropdown">
+            <button id="headerGames">Games</button>
+            <div class="dropdown-content">
+                <a href="reviewpage.html" onclick="setGameName('Minecraft Update 1.20')">Minecraft Update 1.20</a>
+                <a href="#" onclick="setGameName('The Last Of Us Part I')">The Last Of Us Part I</a>
+                <a href="#" onclick="setGameName('Hogwarts Legacy')">Hogwarts Legacy</a>
+            </div>
+        </div>
+
         <button id="headerContacts">Contacts</button>
         <button id="headerRegister">Log In</button>
         <button id="headerLogin">Register</button>
