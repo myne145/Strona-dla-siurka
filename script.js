@@ -61,4 +61,11 @@ const updateLoggedInAccount = () => {
     }
 }
 
+const displayLoggedInAccount = () => {
+    const username = new URLSearchParams(window.location.search).get('login');
+    const node = document.createElement("li");
+    node.appendChild("Test");
+    // document.getElementById('solidInFrontOfBg').appendChild(node)
+}
+
 
