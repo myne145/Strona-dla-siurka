@@ -5,6 +5,7 @@ html {
     font-family: 'Roboto', sans-serif;
     background-image: url("MenuTlo.jpg");
     background-size: 100%;
+
 }
 
 #headerMenu {
@@ -19,6 +20,8 @@ html {
 }
 
 #inFrontOfBg {
+    position: absolute;
+    width: 100%;
     padding-top: 3%;
     margin-top: 75px;
     background: rgba(17, 18, 19, 0.45);
@@ -26,9 +29,12 @@ html {
     color: white;
     text-align: center;
     /*opacity: 45%;*/
+    left: 0;
+    right: 0;
 }
 
 #checkOutNewReview {
+    color: white;
     background-color: #7138ad;
     border: none;
     border-radius: 10px;
@@ -44,13 +50,15 @@ html {
 }
 
 #solidInFrontOfBg {
-    position: absolute;
+    /*position: absolute;*/
+    left: 0;
     width: 100%;
     background-color: #111213;
     padding-bottom: 25%;
 }
 
 #headerHome, #headerContacts {
+    color: white;
     background: rgba(0,0,0,0);
     /*border: 1px red solid;*/
     border: none;
@@ -63,6 +71,7 @@ html {
 }
 
 #headerRegister, #headerLogin {
+    color: white;
     position: relative;
     left: 44%;
     background: rgba(0,0,0,0);
@@ -75,7 +84,11 @@ html {
     border-radius: 5px;
 }
 
-#headerHome:hover, #headerContacts:hover, #headerGames:hover, #headerLogin:hover, #headerRegister:hover {
+#headerIcon {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#headerHome:hover, #headerContacts:hover, #headerGames:hover, #headerLogin:hover, #headerRegister:hover, #headerIcon:hover {
     background: rgb(113, 56, 173);
     cursor: pointer;
 }
