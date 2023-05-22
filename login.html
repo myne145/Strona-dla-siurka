@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
 </head>
-<body>
+<body onload="setLoginOrRegisterForm()">
 <div id="headerMenu">
-    <img id="headerIcon" src="icon.png" onclick="location.href='index.html'">
+    <img id="headerIcon" src="icon.png" onclick="location.href='index.html'" alt="Nasze logo">
     <button id="headerHome" onclick="location.href='index.html'">Home</button>
     <div class="dropdown">
         <button id="headerGames">Games</button>
@@ -21,6 +22,22 @@
     <button id="headerContacts" onclick="location.href='contacts.html'">Contacts</button>
     <button id="headerRegister" onclick="location.href='login.html?type=login'">Log In</button>
     <button id="headerLogin" onclick="location.href='login.html?type=register'">Register</button>
+</div>
+<div id="loginForm">
+    <br>
+    <h1 id="loginTitle">Lorem ipsum dolor sit amet</h1>
+    <input type="text" placeholder="Adres Email" id="loginBox">
+    <br>
+    <br>
+    <input type="password" placeholder="Hasło" id="passwordBox">
+    <br>
+    <br>
+    <br>
+    <a href="login.html?type=register">Lorem ipsum dolor sit amet? Lorem ipsum dolor sit amet!</a>
+    <button id="loginConfirm">Lorem ipsum dolor sit amet</button>
+    <br>
+    <br>
+    <p>‎ </p>
 </div>
 </body>
 </html>

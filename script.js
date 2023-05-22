@@ -23,4 +23,19 @@ const setReviewTextBasedOnSelectedGame = () => {
         document.title = `${gameName} review - ${websiteTitle}`;
 }
 
+const setLoginOrRegisterForm = () => {
+    let isLogin;
+    const requestedFormType = new URLSearchParams(window.location.search).get('type');
+    if(requestedFormType === 'login')
+        isLogin = true;
+    else if(requestedFormType === 'register')
+        isLogin = false;
+    else {
+        //TODO: handle invalid values (or maybe not fuck it)
+    }
+    if(isLogin) {
+        document.getElementById('loginConfirm').innerHTML = "Zaloguj Się";
+    }
+}
+
 
