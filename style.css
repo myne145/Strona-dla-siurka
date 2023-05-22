@@ -32,7 +32,7 @@ body, html {
     background-color: #7138ad;
     border: none;
     border-radius: 10px;
-    width: 15%;
+    width: 20%;
     height: 75px;
     transition: background-color 0.3s ease, color 0.3s ease;
     font-size: 22px;
@@ -80,6 +80,10 @@ body, html {
     cursor: pointer;
 }
 
+#headerIcon:hover {
+    cursor: pointer;
+}
+
 #headerIcon {
     float: left;
     width: 5%;
@@ -124,3 +128,26 @@ body, html {
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+#reviewPane {
+    margin-top: 8%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 5px;
+    /*height: 750px;*/
+    background: rgba(17, 18, 19, 0.87);
+    text-align: center;
+    color: white;
+}
+
+#gameReviewTitle {
+    padding-top: 2%;
+}
+
+#gameImage {
+    height: 256px;
+    width: 256px;
+    float: left;
+}
+
+
