@@ -50,6 +50,7 @@ const setLoginOrRegisterForm = () => {
         document.getElementById('loginTitle').innerHTML = "Zarejestruj się";
         document.getElementById('repeatPasswordBox').style.display = 'inline';
     }
+    displayLoggedInAccountOnPageLoad();
 }
 
 
@@ -61,11 +62,40 @@ const updateLoggedInAccount = () => {
     }
 }
 
-const displayLoggedInAccount = () => {
-    const username = new URLSearchParams(window.location.search).get('login');
-    const node = document.createElement("li");
-    node.appendChild("Test");
-    // document.getElementById('solidInFrontOfBg').appendChild(node)
+const displayLoggedInAccountOnPageLoad = () => {
+    const username = new URLSearchParams(window.location.search).get('username');
+    const password = new URLSearchParams(window.location.search).get('password');
+    const userInfoDiv = document.getElementById('loggedUserInfo');
+    if (password === null || username === null || password === undefined || username === undefined) {
+        userInfoDiv.style.visibility = 'hidden';
+        document.getElementById('headerLogin').style.left = '40%';
+        document.getElementById('headerRegister').style.left = '40%';
+    } else {
+        userInfoDiv.style.visibility = 'visible';
+        userInfoDiv.innerHTML = `Zalogowano jako ${username}`;
+        document.getElementById('headerLogin').style.visibility = 'hidden';
+        document.getElementById('headerRegister').style.visibility = 'hidden';
+    }
+}
+
+const displayLoggedInAccountAfterButtonClicked = () => {
+    const username = document.getElementById('loginBox').value;
+    const password = document.getElementById('passwordBox').value;
+    const userInfoDiv = document.getElementById('loggedUserInfo');
+    if (password === '' || username === '' || username.length > 10) {
+        userInfoDiv.style.visibility = 'hidden';
+        document.getElementById('headerLogin').style.left = '40%';
+        document.getElementById('headerRegister').style.left = '40%';
+        document.getElementById('headerLogin').style.visibility = 'visible';
+        document.getElementById('headerRegister').style.visibility = 'visible';
+        alert("Niepoprawne hasło lub użytkownik. Nazwa użytkownika nie może przekraczać 10 znaków.")
+    } else {
+        userInfoDiv.style.visibility = 'visible';
+        userInfoDiv.innerHTML = `Zalogowano jako ${username}`;
+        document.getElementById('headerLogin').style.visibility = 'hidden';
+        document.getElementById('headerRegister').style.visibility = 'hidden';
+    }
+    window.location.href = `index.html?username=${username}&password=${password}`;
 }
 
 
