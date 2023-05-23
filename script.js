@@ -21,6 +21,7 @@ const setReviewTextBasedOnSelectedGame = () => {
         document.title = 'Coś poszło nie tak';
     else
         document.title = `${gameName} review - ${websiteTitle}`;
+    displayLoggedInAccountOnPageLoad();
 }
 
 const isInLoginMode = () => {
@@ -75,7 +76,13 @@ const displayLoggedInAccountOnPageLoad = () => {
         userInfoDiv.innerHTML = `Zalogowano jako ${username}`;
         document.getElementById('headerLogin').style.visibility = 'hidden';
         document.getElementById('headerRegister').style.visibility = 'hidden';
+
+        document.getElementById('headerContacts').setAttribute('onclick', `location.href='contacts.html?username=${username}&password=${password}'`);
+        document.getElementById('game1').setAttribute('onclick', `location.href='reviewpage.html?data=mc_1.201&username=${username}&password=${password}'`);
+        document.getElementById('game2').setAttribute('onclick', `location.href='reviewpage.html?data=tloup1&username=${username}&password=${password}'`);
+        document.getElementById('game3').setAttribute('onclick', `location.href='reviewpage.html?data=hogwartslegacy&username=${username}&password=${password}'`);
     }
+
 }
 
 const displayLoggedInAccountAfterButtonClicked = () => {

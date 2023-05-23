@@ -49,13 +49,7 @@ html {
     cursor: pointer;
 }
 
-#solidInFrontOfBg {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    background-color: #111213;
-    padding-bottom: 25%;
-}
+
 
 #headerHome, #headerContacts {
     color: white;
@@ -214,5 +208,20 @@ html {
     transition: background-color 0.3s ease, color 0.3s ease;
     font-size: 22px;
     border-radius: 5px;
+}
+
+#mapLink1, #mapLink2, #mapLink3, #mapLink4, #mapLink5, #mapLink6 {
+    display: block;
+    margin-top: 10px;
+}
+
+#solidInFrontOfBg {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: rgba(17, 18, 19, 0.95);
+    /*padding-bottom: 25%;*/
+    text-align: center;
+    color: white;
 }
 
