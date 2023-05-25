@@ -20,7 +20,7 @@ html {
 }
 
 #inFrontOfBg {
-    position: relative;
+    /*position: relative;*/
     width: 100%;
     padding-top: 3%;
     margin-top: 75px;
