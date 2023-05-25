@@ -8,7 +8,7 @@ html {
 
 }
 
-#headerMenu {
+#naglowek {
     position: fixed;
     top: 0;
     left: 0;
@@ -19,7 +19,7 @@ html {
     /*border-bottom-right-radius: 10px;*/
 }
 
-#inFrontOfBg {
+#strona {
     /*position: relative;*/
     width: 100%;
     padding-top: 3%;
@@ -33,7 +33,7 @@ html {
     right: 0;
 }
 
-#checkOutNewReview {
+#najnowaszaopinia {
     color: white;
     background-color: #7138ad;
     border: none;
@@ -44,7 +44,7 @@ html {
     font-size: 22px;
 }
 
-#checkOutNewReview:hover {
+#najnowaszaopinia:hover {
     background-color: #8b4cd0;
     cursor: pointer;
 }
@@ -64,7 +64,7 @@ html {
 
 }
 
-#headerRegister, #headerLogin {
+#zarejestrujsienaglowek, #zalogujsienaglowek {
     color: white;
     position: relative;
     left: 20%;
@@ -78,26 +78,26 @@ html {
     border-radius: 5px;
 }
 
-#headerIcon {
+#ikonawnaglowku {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-#headerHome:hover, #headerContacts:hover, #headerGames:hover, #headerLogin:hover, #headerRegister:hover, #headerIcon:hover {
+#headerHome:hover, #headerContacts:hover, #przyciskgry:hover, #zalogujsienaglowek:hover, #zarejestrujsienaglowek:hover, #ikonawnaglowku:hover {
     background: rgb(113, 56, 173);
     cursor: pointer;
 }
 
-#headerIcon:hover {
+#ikonawnaglowku:hover {
     cursor: pointer;
 }
 
-#headerIcon {
+#ikonawnaglowku {
     float: left;
     width: 5%;
     height: 75px;
 }
 
-#headerGames {
+#przyciskgry {
     background: rgba(0,0,0,0);
     transition: background-color 0.3s ease, color 0.3s ease;
     color: white;
@@ -136,7 +136,7 @@ html {
 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
-#reviewPane {
+#opinia {
     margin-top: 8%;
     margin-left: 5%;
     margin-right: 5%;
@@ -147,17 +147,17 @@ html {
     color: white;
 }
 
-#gameReviewTitle {
+#tytulopinii {
     padding-top: 2%;
 }
 
-#gameImage {
+#zdjeciegry {
     height: 256px;
     width: 256px;
     float: left;
 }
 
-#loginForm {
+#oknologowania {
     background: rgba(17, 18, 19, 0.85);
     color: white;
     margin-left: 40%;
@@ -167,7 +167,7 @@ html {
     border-radius: 15px;
 }
 
-#loginConfirm {
+#potwierdzlogin {
     background-color: #7138ad;
     border: none;
     border-radius: 10px;
@@ -177,12 +177,12 @@ html {
     font-size: 22px;
 }
 
-#loginConfirm:hover {
+#potwierdzlogin:hover {
     background-color: #8b4cd0;
     cursor: pointer;
 }
 
-#loginBox, #passwordBox, #repeatPasswordBox {
+#loginBox, #passwordBox, #powtorzhaslobox {
     color: white;
     background-color: #111213;
     border: 2px #7138ad solid;
@@ -192,14 +192,14 @@ html {
     text-align: center;
 }
 
-#doUWantToRegister {
+#czycheszsiearejestrowac {
     color: white;
 }
 
-#loggedUserInfo {
+#infouzalogowanym {
     color: white;
     position: relative;
-    left: 22%;
+    left: 42%;
     background: rgba(0,0,0,0);
     /*border: 1px red solid;*/
     border: none;
@@ -215,7 +215,7 @@ html {
     margin-top: 10px;
 }
 
-#solidInFrontOfBg {
+#podstronainformacje {
     position: absolute;
     left: 0;
     width: 100%;

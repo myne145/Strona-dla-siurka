@@ -10,33 +10,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="script.js"></script>
 </head>
-<body onload="displayLoggedInAccountOnPageLoad()">
-    <div id="headerMenu">
-        <img id="headerIcon" src="icon.png" onclick="location.href='index.html'" alt="Nasze logo">
-        <button id="headerHome" onclick="location.href='index.html'">Home</button>
+<body onload="zmienzalogowanegouzytkownika()">
+    <div id="naglowek">
+        <img id="ikonawnaglowku" src="icon.png" onclick="location.href='index.html'" alt="Nasze logo">
         <div class="dropdown">
-            <button id="headerGames">Gry</button>
+            <button id="przyciskgry">Gry</button>
             <div class="dropdown-content">
-                <a href="reviewpage.html?data=mc_1.20" id="game1">Minecraft Update 1.20</a>
-                <a href="reviewpage.html?data=tloup1" id="game2">The Last Of Us Part I</a>
-                <a href="reviewpage.html?data=hogwartslegacy" id="game3">Hogwarts Legacy</a>
+                <a href="reviewpage.html?data=mc_1.20" id="gra1">Minecraft Update 1.20</a>
+                <a href="reviewpage.html?data=tloup1" id="gra2">The Last Of Us Part I</a>
+                <a href="reviewpage.html?data=hogwartslegacy" id="gra3">Hogwarts Legacy</a>
             </div>
         </div>
 
-        <button id="headerContacts" onclick="location.href='contacts.html'">Kontakt</button>
-        <button id="headerRegister" onclick="location.href='login.html?type=login'">Zaloguj się</button>
-        <button id="headerLogin" onclick="location.href='login.html?type=register'">Zarejestruj się</button>
-        <button id="loggedUserInfo">Lorem ipsum aisldjsalkjdlksajd</button>
+        <button id="zarejestrujsienaglowek" onclick="location.href='login.html?type=login'">Zaloguj się</button>
+        <button id="zalogujsienaglowek" onclick="location.href='login.html?type=register'">Zarejestruj się</button>
+        <button id="infouzalogowanym">Lorem ipsum aisldjsalkjdlksajd</button>
     </div>
-    <div id="inFrontOfBg">
-        <div id="opacityOverlay">
+    <div id="strona">
+        <div id="przezroczystetlo">
             <h1>Najlepsze recenzje gier w całym internecie!</h1>
-            <button id="checkOutNewReview" onclick="location.href='reviewpage.html?data=mc_1.20'">Sprawdź naszą najnowszą recenzję!</button>
+            <button id="najnowaszaopinia" onclick="location.href='reviewpage.html?data=mc_1.20'">Sprawdź naszą najnowszą recenzję!</button>
         </div>
     </div>
 
-    <div id="solidInFrontOfBg">
-        <div id="pageMap">
+    <div id="podstronainformacje">
+        <div id="mapastrony">
             <br>
             <br>
             <br>
